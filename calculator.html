@@ -9,11 +9,19 @@
             const num = document.getElementById("n1");
             num.value = Math.pow(num.value, 3);
         }
+
+        function square() {
+            const num = document.getElementById("n1");
+            num.value = Math.pow(num.value, 2);
+        }
     </script>
 </head>
 <body>
     <h1>Calculadora de Jon Lozano Pérez</h1>
     <label>Number: <input type="text" id="n1"></label>
-    <p><button onclick="cube()">x^3</button></p>
+    <p>
+        <button onclick="cube()">x^3</button>
+        <button onclick="square()">x^2</button>
+    </p>
 </body>
 </html>
